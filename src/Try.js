@@ -1,13 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./style.css";
-import Hangman from "./hangman.png";
 
 const Try = () => {
   let input = useRef();
   let button = useRef();
   const [result, setResult] = useState();
   const [attempts, setAttempts] = useState(8);
-  const [difficulty, setDifficulty] = useState(true);
   const [wrongLetters, setWrongLetters] = useState([]);
   const [rightLetters, setRightLetters] = useState([]);
   const [filteredWrongLetters, setFilteredWrongLetters] = useState([]);
@@ -15,7 +13,6 @@ const Try = () => {
   const [indices, setIndices] = useState([]);
   const [randomWord, setRandomWord] = useState("сок");
   const [arraySorted, setArraySorted] = useState([]);
-  let hiddenWord = "potato";
   let wordList = [
     "сок",
     "картон",
@@ -109,12 +106,6 @@ const Try = () => {
           <div className="top">
             <p className="attempts">Осталось попыток:</p>{" "}
             <p className="number">{`${attempts}`} </p>
-            {/* <img src={Hangman} alt="" />
-            <div className="box box1"></div>
-            <div className="box box2"></div>
-            <div className="box box3"></div>
-            <div className="box box4"></div>
-            <div className="box box5"></div> */}
           </div>
           <div className="bottom">
             {hiddenWordArray.map((h, index) => (
