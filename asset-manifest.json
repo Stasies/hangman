@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hangman/static/css/main.31795fec.css",
+    "main.js": "/hangman/static/js/main.5aa62f20.js",
+    "index.html": "/hangman/index.html",
+    "main.31795fec.css.map": "/hangman/static/css/main.31795fec.css.map",
+    "main.5aa62f20.js.map": "/hangman/static/js/main.5aa62f20.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31795fec.css",
+    "static/js/main.5aa62f20.js"
+  ]
+}
